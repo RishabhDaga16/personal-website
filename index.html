@@ -42,12 +42,14 @@
       .w3-bar .w3-button {
         padding: 16px;
       }
+
       #work {
         background-position: center;
         background-size: cover;
         background-image: url(https://wallpaperset.com/w/full/6/6/4/125431.jpg);
         color: white;
       }
+      
       #skills {
         background-position: center;
         background-size: cover;
@@ -84,7 +86,21 @@
         width: 90%;
         height: 80vh;
       }
-      @media screen and (max-width: 600px) {
+      #skill-table {
+        width: 90%;
+        border-collapse: collapse;
+        font-size: 20px;
+      }
+      #skill-table-tab {
+        width: 90%;
+        border-collapse: collapse;
+        font-size: 20px;
+        text-align: center;
+      }
+      #skill-list {
+        font-size: 20px;
+      }
+      @media screen and (max-width: 450px) {
         .info {
           display: inline-block;
           width: 85vw;
@@ -96,6 +112,28 @@
         #myresume {
           width: 90%;
           height: 70vh;
+        }
+        #skill-table {
+          display: none;
+        }
+        #skill-table-tab {
+          display: none;
+        }
+      }
+      @media screen and (min-width: 900px) {
+        #skill-list {
+          display: none;
+        }
+        #skill-table-tab {
+          display: none;
+        }
+      }
+      @media screen and (min-width: 450px) and (max-width: 900px) {
+        #skill-list {
+          display: none;
+        }
+        #skill-table {
+          display: none;
         }
       }
     </style>
@@ -178,11 +216,11 @@
         <span class="w3-xxlarge w3-hide-large w3-hide-medium"
           ><i>Hi, I'm Rishabh</i></span
         >
-          <a
-            href="#about"
-            class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off"
-            >Learn more about me</a
-          >
+        <a
+          href="#about"
+          class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off"
+          >Learn more about me</a
+        >
       </div>
     </header>
 
@@ -344,38 +382,142 @@
       <h3 class="w3-center">SKILLS</h3>
       <br />
       <center>
-        <div class="info">
-          <h6>
-            <p>Software Development</p>
-            <p>Web Development</p>
-            <p>Artificial Intelligence</p>
-            <p>Machine Learning</p>
-            <p>Python</p>
-            <p>MATLAB</p>
-            <p>C++</p>
-            <p>C</p>
-            <p>Java</p>
-            <p>JavaScript</p>
-            <p>React JS</p>
-            <p>Next JS</p>
-            <p>Angular JS</p>
-            <p>Node JS</p>
-            <p>Express JS</p>
-            <p>MongoDB</p>
-            <p>SQL</p>
-            <p>HTML</p>
-            <p>CSS</p>
-            <p>Bootstrap</p>
-            <p>Material UI</p>
-            <p>Git</p>
-            <p>GitHub</p>
-            <p>Spring Boot</p>
-            <p>RESTful APIs</p>
-            <p>Postman</p>
-            <p>ChatGPT</p>
-            <p>Gemini</p>
-            <p>AI Tools</p>
-          </h6>
+        <table id="skill-table">
+          <tr>
+            <td>Software Development</td>
+            <td>Web Development</td>
+            <td>Artificial Intelligence</td>
+            <td>Machine Learning</td>
+          </tr>
+          <tr>
+            <td>Python</td>
+            <td>MATLAB</td>
+            <td>C++</td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>Java</td>
+            <td>JavaScript</td>
+            <td>React JS</td>
+            <td>Next JS</td>
+          </tr>
+          <tr>
+            <td>Angular JS</td>
+            <td>Node JS</td>
+            <td>Express JS</td>
+            <td>MongoDB</td>
+          </tr>
+          <tr>
+            <td>SQL</td>
+            <td>HTML</td>
+            <td>CSS</td>
+            <td>Bootstrap</td>
+          </tr>
+          <tr>
+            <td>Material UI</td>
+            <td>Git</td>
+            <td>GitHub</td>
+            <td>Spring Boot</td>
+          </tr>
+          <tr>
+            <td>RESTful APIs</td>
+            <td>ChatGPT</td>
+            <td>Gemini</td>
+            <td>AI Tools</td>
+          </tr>
+        </table>
+      </center>
+      <center>
+        <table id="skill-table-tab">
+          <tr>
+            <td>Software Development</td>
+            <td>Web Development</td>
+          </tr>
+          <tr>
+            <td>Artificial Intelligence</td>
+            <td>Machine Learning</td>
+          </tr>
+          <tr>
+            <td>Python</td>
+            <td>MATLAB</td>
+          </tr>
+          <tr>
+            <td>C++</td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>Java</td>
+            <td>JavaScript</td>
+          </tr>
+          <tr>
+            <td>React JS</td>
+            <td>Next JS</td>
+          </tr>
+          <tr>
+            <td>Angular JS</td>
+            <td>Node JS</td>
+          </tr>
+          <tr>
+            <td>Express JS</td>
+            <td>MongoDB</td>
+          </tr>
+          <tr>
+            <td>SQL</td>
+            <td>HTML</td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td>Bootstrap</td>
+          </tr>
+          <tr>
+            <td>Material UI</td>
+            <td>Git</td>
+          </tr>
+          <tr>
+            <td>GitHub</td>
+            <td>Spring Boot</td>
+          </tr>
+          <tr>
+            <td>RESTful APIs</td>
+            <td>ChatGPT</td>
+          </tr>
+          <tr>
+            <td>Gemini</td>
+            <td>AI Tools</td>
+          </tr>
+        </table>
+      </center>
+      <center>
+        <div class="info" id="skill-list">
+          <p>Software Development</p>
+          <p>Web Development</p>
+          <p>Artificial Intelligence</p>
+          <p>Machine Learning</p>
+          <p>Python</p>
+          <p>MATLAB</p>
+          <p>C++</p>
+          <p>C</p>
+          <p>Java</p>
+          <p>JavaScript</p>
+          <p>React JS</p>
+          <p>Next JS</p>
+          <p>Angular JS</p>
+          <p>Node JS</p>
+          <p>Express JS</p>
+          <p>MongoDB</p>
+          <p>SQL</p>
+          <p>HTML</p>
+          <p>CSS</p>
+          <p>Bootstrap</p>
+          <p>Material UI</p>
+          <p>Git</p>
+          <p>GitHub</p>
+          <p>Spring Boot</p>
+          <p>RESTful APIs</p>
+          <p>Postman</p>
+          <p>ChatGPT</p>
+          <p>Gemini</p>
+          <p>AI Tools</p>
         </div>
       </center>
     </div>
